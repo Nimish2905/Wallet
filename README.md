@@ -1,3 +1,5 @@
+# Wallet
+
 ## Table of Contents:
 - General Information
 - Content
