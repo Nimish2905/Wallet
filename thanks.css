@@ -111,8 +111,9 @@ color: #000000;
     text-align: center;
 }
 
-.redirect {
+#counter{
     position: absolute;
-    top: 720px;
-    left: 552px;
+    color: #222222;
+    top: 700px;
+    left: 662px;
 }

@@ -27,7 +27,7 @@
         </header>
 <?php
 
-echo "
+echo " 
 
     
         <div class='content'>
@@ -40,10 +40,11 @@ echo "
             <div class='statement'>
                 <h3>Thank you for banking with us</h3>
             </div>
+            <div id='counter'></div>
         </div>
-        ";
-        ?>
-        
+         ";
+        ?> 
+    <script src='logic.js' async defer></script>
     </body>
 </html>
 
