@@ -1,0 +1,284 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 0px 30px;
+   background-color: #222222;
+   z-index: 10;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    margin-right: 700px;
+    
+}
+
+
+header ul li{
+    position: relative;
+    list-style: none;
+    margin-right: 80px;
+}
+
+header ul a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #F8F8F8 ;
+    letter-spacing: 2px;
+    font-weight: 500px;
+}
+
+
+header ul a::after{
+    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 8;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #FFEC9F;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+header ul a:hover:after { 
+    background: #FFEC9F;
+    width: 100%; 
+    left: 0; 
+  }
+
+table {
+  color: #222222;
+
+  margin-top: 140px;
+  margin-left: 70px;
+  padding: 0;
+  position: relative;
+  width: 90%;
+  height: 70%;
+  border: 1px solid black;
+  position: absolute;
+
+
+  border: 0.1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: -10px 10px 10px 3px rgba(153, 153, 153, 0.25);
+}
+
+th,
+td {
+  text-decoration: none;
+  padding: 7px;
+  padding-left: 40px;
+  font-size: 15px;
+  text-align: center;
+  cursor: default;
+  font-family: 'Quicksand', sans-serif;
+  color: #222222;
+}
+th{
+  text-decoration: none;
+  
+  font-size: 15px;
+}
+
+td {
+  font-family: 'Varela', sans-serif;
+  text-decoration: none;
+  cursor: default;
+}
+tbody{
+  color: #222222;
+}
+
+td:nth-child(1) {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#first_btn{
+  color: #222222;
+}
+
+#title {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+  left: 400px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+hr {
+  position: absolute;
+  top: 200px;
+}
+
+.modal {
+  background-color: transparent;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*height: 400px;
+		width: 600px;*/
+  z-index: 1300;
+  display: none;
+  font-size: 18px;
+  font-family: 'Varela', sans-serif;
+  text-decoration: solid;
+
+}
+
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: none;
+}
+
+.col-sm-6 {
+  padding: 5px;
+  text-align: center;
+ cursor: default; 
+}
+
+.col-sm-12 {
+  text-align: center;
+}
+
+.btn_transf{
+  width: 150px;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-left: 220px;
+  border: 0.5px solid #222222;
+  background: #F8F8F8;
+  transition: 0.5s ease;
+  padding: 0;
+}
+
+.btn_transf:hover{
+  
+  transform: scale(1.1); 
+  transition: 0.6s ease-in-out;
+  background: #FFEC9F;
+}
+
+#plus{
+  color: #222222;
+  width: 30px;
+  height: 30px;
+  background: #F8F8F8;
+  border: 0.2px solid #222222;
+  transition: 1s ease;
+}
+
+#plus:hover{
+  
+  transform: rotateZ(180deg);
+  
+  transition: 0.5s ease-in;
+  background: #FFEC9F;
+}
+
+input{
+  margin-left: 180px;
+  padding-top:5px ;
+  padding-bottom:8px ;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+::-webkit-input-placeholder {
+  color: #000;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:-moz-placeholder {
+  color: #000;
+  opacity: 0.5;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+::-moz-placeholder {
+  color: #000;
+  opacity: 0.5;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:-ms-input-placeholder {  
+  color: #000;
+  opacity: 0.5;
+  -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+/* Place Holder CSS for Focus */
+:hover::-webkit-input-placeholder {
+  opacity: 0.75;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:hover:-moz-placeholder {
+  opacity: 0.75;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:hover::-moz-placeholder {
+  opacity: 0.75;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:hover:-ms-input-placeholder {  
+  opacity: 0.75;
+  -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+/* Place Holder CSS for Focus */
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:focus:-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:focus:-ms-input-placeholder {  
+  opacity: 0;
+  -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
