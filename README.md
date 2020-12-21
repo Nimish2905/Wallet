@@ -8,7 +8,7 @@
 - Setup
 
 ## General Information :
-This repository contains a Banking website of a bank called “Wallet”.It provides transfer funds between customers and also has a transaction history. This was developed for an internship at the SPARK Foundation.
+This repository contains a Banking website of a bank called “Wallet”.It allows you to transfer funds between customers and also has a transaction history. This was developed for an internship at the SPARK Foundation.
 
 ## Content:
 - /images folder contains required and used images on the website.
